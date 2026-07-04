@@ -1,0 +1,17 @@
+-------Variable---------
+
+1. by defalut the variable is rust is immutable
+2. but if you want to create a mutable variable that can change later you have to use
+3. mut after let and before vairable name to make it mutable.
+
+-------Variable End-----
+
+--------Const-----------
+
+1. const cann't be made mutable means {const mut is illigal}
+2. they need an explicite type annotation.
+3. they can be defined at the global/pacakge scope outside of function
+
+-------Const End----------
+
+
