@@ -1,12 +1,13 @@
-const PI:f32 = 3.14;
+//const PI:f32 = 3.14;
 
 fn main() {
+    let tup:(i32,f32,bool) = (100,2.4,true);
 
-    //after MINUTES_IN_DAY we have to give the type must
-    const MINUTES_IN_DAY:i32 = 24 * 60; 
+    let (x,y,z) = tup;
 
-    println!("The value of PI is {PI}");
-    println!("The value of minutes is {MINUTES_IN_DAY}");
+    println!("vlaue of x is {x}");
+    println!("vlaue of x is {y}");
+    println!("vlaue of x is {z}");
 
 }
 
