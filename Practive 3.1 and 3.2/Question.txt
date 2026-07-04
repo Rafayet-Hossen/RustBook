@@ -1,0 +1,58 @@
+Here is a hands-on coding challenge specifically designed to test and solidify your understanding of **Chapter 3.1 (Variables & Mutability)** and **Chapter 3.2 (Data Types)**.
+
+Instead of just testing syntax, this exercise requires you to manage memory boundaries, apply variable shadowing, unpack compound data structures, and handle precise scalar data types.
+
+---
+
+## 🛠️ The Challenge: The Space Cargo Tracker
+
+You are writing the core tracking system for a cargo spaceship. The system needs to process planetary coordinates, manage tracking metrics, and handle sensory arrays.
+
+### Your Assignment
+
+Create a new Cargo project (`cargo new cargo_tracker`) and write a single program in `src/main.rs` that completes the following steps in sequence:
+
+### Step 1: Constants and Configuration
+
+* Define a global constant named `MAX_CARGO_WEIGHT` outside your `main` function. Give it an explicit integer type of `u32` and set the value to `10000`.
+
+### Step 2: Mutability and Tracking Metrics
+
+* Inside `main`, declare a mutable variable named `current_weight` initialized to `8500`.
+* Print the value.
+* Simulate loading a new item by adding `1200` to `current_weight` and print the updated value.
+
+### Step 3: Shadowing and Type Transformation
+
+* Declare an immutable variable named `fuel_gauge` and assign it the string value `"75%"`.
+* Using **variable shadowing**, transform `fuel_gauge` into a clean integer (`u32`) value by parsing away the percent symbol (Hint: you can use `.trim_matches('%').parse().unwrap()`).
+* Print the final numeric fuel value.
+
+### Step 4: Working with Scalar Types
+
+* Declare an explicit `char` variable named `sector_id` containing a single Unicode character or emoji (e.g., `'🌌'` or `'A'`).
+* Declare a boolean variable named `hyperdrive_active` set to `true`.
+* Declare an `f32` variable named `engine_efficiency` set to `0.98`.
+
+### Step 5: Unpacking Compound Structures (Tuples)
+
+* Create a tuple named `space_coordinates` containing three values: an integer latitude (`i32`), a floating-point longitude (`f64`), and a sector code character (`char`). Example values: `(-45, 128.54321, 'X')`.
+* Use **destructuring** to unpack the tuple into three separate variables: `lat`, `lon`, and `sec`.
+* Print out the longitude (`lon`) and sector (`sec`) cleanly using placeholders.
+
+### Step 6: Arrays and Out-of-Bounds Behavior
+
+* Create an array named `thruster_statuses` containing 4 boolean elements, all initialized to `true` using the shorthand array initialization syntax (e.g., `[value; size]`).
+* Change the status of the second thruster (index `1`) to `false`. (Hint: Think about what you need to change when creating the array to allow modifications!).
+* Print the entire array using the debug formatting placeholder `{:?}`.
+
+---
+
+### Instructions for Submission
+
+1. Write the code locally in your editor.
+2. Run `cargo fmt` to clean your syntax layout.
+3. Verify your program runs without errors using `cargo run`.
+4. Paste your completed code below.
+
+Once submitted, I will analyze your variable scopes, your data type selections, and your destructuring choices to see if everything aligns perfectly with idiomatic Rust!
